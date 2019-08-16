@@ -1,0 +1,60 @@
+body{
+    background-color:RGB(217, 247, 252);
+    border-radius: 5px;
+}
+
+legend {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: 2px solid black;
+    border-radius: 4px;
+}
+
+
+.flex-outer
+ {
+  display: flex;
+  
+}
+
+.flex-item {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding:10px;
+    
+}
+
+.flex-item > label,
+    input,
+    select,
+    button {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+input, select {
+    height: 30px;
+}
+
+button {
+    
+    background-color:  rgb(4, 124, 176);
+    border: 1px solid  rgb(2, 79, 112);
+    border-radius: 2px;
+    color: antiquewhite;
+    padding: 10px 30px;
+    
+
+}
+
+.div-submit {
+    align-content: center;
+    
+}
+
+
+
