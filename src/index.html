@@ -10,42 +10,53 @@
 </head>
 
 <body>
-    <div>
-        <form action="">
-            <fieldset class="flex-container">
-                <legend align="center">Daily Journal</legend>
-                
+    <header>
+        <h1>NSS Daily Journal</h1>
+    </header>
+    <div class="flex-container">
+        <div class="daily-journal-form">
+            <form action="">
+                <fieldset>
+
+                    <legend align="center">Daily Journal</legend>
+
                     <div class="flex-item">
                         <label for="journalDate">Date of entry</label>
                         <input type="date" id="journalDate" />
                     </div>
 
-                                    
-                <div class="flex-item">
-                    <label for="conceptCovered">Concept Covered</label>
-                    <input type="text" id="conceptCovered" />
-                </div>
-                <div class="flex-item">
-                    <label for="journalEntry">Journal Entry</label>
-                    <textarea rows="8" id="journalEntry"></textarea>
-                </div>
+                    <div class="flex-item">
+                        <label for="conceptCovered">Concept Covered</label>
+                        <input type="text" id="conceptCovered" />
+                    </div>
 
-                <div class="flex-item">
-                    <label for="moodOfTheDay">Mood of the day</label>
-                    <select>
-                        <option value="happy">Happy</option>
-                        <option value="fine">Fine</option>
-                        <option value="sad">Sad</option>
-                        <option value="exausted">Exausted</option>
-                    </select>
-                </div>
-                <div class="flex-item div-submit">
-                    <button type="button">Record Journal Entry</button>
-                </div>
+                    <div class="flex-item">
+                        <label for="journalEntry">Journal Entry</label>
+                        <textarea rows="8" id="journalEntry"></textarea>
+                    </div>
 
-            </fieldset>
-        </form>
+                    <div class="flex-item">
+                        <label for="moodOfTheDay">Mood of the day</label>
+                        <select>
+                            <option value="happy">Happy</option>
+                            <option value="fine">Fine</option>
+                            <option value="sad">Sad</option>
+                            <option value="exausted">Exausted</option>
+                        </select>
+                    </div>
+
+                    <div class="flex-item div-submit">
+                        <button type="button">Record Journal Entry</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
     </div>
+    <footer>
+        <p>&copy; 2019</p>
+    </footer>
+
 
 </body>
 
