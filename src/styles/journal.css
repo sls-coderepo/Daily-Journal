@@ -1,7 +1,26 @@
-body{
-    background-color:RGB(205, 242, 247);
-    border-radius: 5px;
-    padding: 50px 120px;
+html{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+    }
+
+header{
+    background-color: rgb(80, 79, 79);
+    height: 70px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(248, 242, 233);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: unset;
 }
 
 legend {
@@ -11,29 +30,27 @@ legend {
     font-family: Arial, Helvetica, sans-serif;
     border-color: 2px solid black;
     padding: 0 5px;
-    
 }
 
+.flex-container {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    flex: 1;
+}
 
-
-
-.flex-outer
- {
-  display: flex;
-  
+.daily-journal-form {
+    width: 500px;
+   
 }
 
 .flex-item {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding:10px 20px;
-    
 }
-
-
-
-
 
 .flex-item > label,
     input,
@@ -42,7 +59,6 @@ legend {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    
 }
 
 input, select {
@@ -50,20 +66,27 @@ input, select {
 }
 
 button {
-    
     background-color:  rgb(4, 124, 176);
     border: 1px solid  rgb(2, 79, 112);
     border-radius: 10px;
     color: antiquewhite;
     padding: 10px 30px;
-    
-
-}
+    font-size:15px; 
+  }
 
 .div-submit {
     align-content: center;
     
 }
+
+footer {
+    background-color: rgb(80, 79, 79);
+    color: rgb(248, 242, 233);
+    height: 70px;
+    padding: 10px 20px;
+    margin-top:20px; 
+    text-align: center;
+}   
 
 
 
