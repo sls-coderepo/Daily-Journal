@@ -11,7 +11,7 @@ body {
 
 header{
     background-color: rgb(80, 79, 79);
-    height: 70px;
+    height: 80px;
     padding: 10px 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -21,6 +21,8 @@ h1 {
     color: rgb(248, 242, 233);
     font-family: Arial, Helvetica, sans-serif;
     text-transform: unset;
+    font-size: 40px;
+    
 }
 
 legend {
@@ -41,7 +43,8 @@ legend {
 }
 
 .daily-journal-form {
-    width: 500px;
+    width: 600px;
+    margin: auto;
    
 }
 
