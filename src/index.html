@@ -11,9 +11,9 @@
 
 <body>
     <header>
-        <h1>NSS Daily Journal</h1>
+        <h1>Shirish Shrestha</h1>
     </header>
-    <div class="flex-container">
+    <div  class="flex-container">
         <div class="daily-journal-form">
             <form action="">
                 <fieldset>
@@ -37,7 +37,7 @@
 
                     <div class="flex-item">
                         <label for="moodOfTheDay">Mood of the day</label>
-                        <select>
+                        <select id="moodOfTheDay">
                             <option value="happy">Happy</option>
                             <option value="fine">Fine</option>
                             <option value="sad">Sad</option>
@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="flex-item div-submit">
-                        <button type="button">Record Journal Entry</button>
+                        <button type="button" onclick="addJournal()">Submit</button>
                     </div>
 
                 </fieldset>
@@ -57,7 +57,7 @@
         <p>&copy; 2019</p>
     </footer>
 
-
+<script src="scripts/journal.js"></script>
 </body>
 
 </html>
