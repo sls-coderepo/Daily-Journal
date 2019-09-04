@@ -36,6 +36,7 @@ legend {
 
 .flex-container {
     display: flex;
+    flex-flow: row wrap;
     margin: auto;
     width: 80%;
     padding: 10px;
@@ -44,8 +45,7 @@ legend {
 
 .daily-journal-form {
     width: 600px;
-    margin: auto;
-   
+  
 }
 
 .flex-item {
@@ -90,6 +90,12 @@ footer {
     margin-top:20px; 
     text-align: center;
 }   
+
+.journal_entry {
+    margin-left: 30px;
+    border: solid 1px black;
+    padding: 10px;
+}
 
 
 

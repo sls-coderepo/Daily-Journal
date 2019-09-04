@@ -1,0 +1,39 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "concept": "Array methods",
+      "date": "07/24/2018",
+      "entry": "We learned about array methods",
+      "mood": "OK"
+    },
+    {
+      "date": "2019-09-05",
+      "concept": "test",
+      "entry": "",
+      "mood": "happy",
+      "id": 4
+    },
+    {
+      "date": "2019-09-12",
+      "concept": "s",
+      "entry": "",
+      "mood": "happy",
+      "id": 5
+    },
+    {
+      "date": "2019-09-06",
+      "concept": "test",
+      "entry": "",
+      "mood": "happy",
+      "id": 6
+    },
+    {
+      "date": "2019-09-05",
+      "concept": "test",
+      "entry": "",
+      "mood": "happy",
+      "id": 7
+    }
+  ]
+}
