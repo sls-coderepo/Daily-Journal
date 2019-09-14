@@ -36,7 +36,6 @@ legend {
 
 .flex-container {
     display: flex;
-    flex-flow: row wrap;
     margin: auto;
     width: 80%;
     padding: 10px;
@@ -44,8 +43,13 @@ legend {
 }
 
 .daily-journal-form {
-    width: 600px;
+    width: 50%;
   
+}
+
+.journalList {
+    width: 50%;
+    overflow: auto;
 }
 
 .flex-item {

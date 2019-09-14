@@ -1,0 +1,58 @@
+
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(1, 53, 82);
+    height: 100px;
+    width: 100%;
+    padding:10px;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+   }
+
+h1 {
+    color: rgb(248, 242, 233);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.addJournal {
+    background-color:  rgb(1, 53, 82);
+    border: 1px solid  rgb(2, 79, 112);
+    border-radius:10px;
+    color: antiquewhite;
+    float: right;
+    padding: 10px 12px;
+    font-size:20px; 
+  }
+
+  .journalList {
+      width: 80%;
+      margin: auto;
+      line-height:5px;
+      font-size: 20px;
+      margin-top: 150px;
+      margin-bottom: 100px;
+  }
+
+footer {
+    position:fixed;
+    width:100%;
+    left:0;
+    bottom:0;
+    background-color: rgb(1, 53, 82);
+    color: rgb(248, 242, 233);
+    height: 70px;
+    padding: 10px 20px;
+    margin-top:20px; 
+    text-align: center;
+}   
+
+
+
+
