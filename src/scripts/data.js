@@ -26,7 +26,16 @@ const API = {
             
           })
           .then(response => response.json());
-        }
+     },
+
+     getJournalEntryById: (id) => {
+         return fetch(`${entriesAPI_URL}/${id}`, {
+            method: 'GET',
+          })
+          .then(response => response.json());
+     }
+
+
 }
 
 

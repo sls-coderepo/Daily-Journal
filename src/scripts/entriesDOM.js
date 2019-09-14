@@ -1,5 +1,5 @@
 
-document.querySelector("#submit").addEventListener("click", (event) => {
+document.querySelector("#btn-save").addEventListener("click", (event) => {
     const journalDate = document.querySelector("#journalDate").value
     const concept = document.querySelector("#conceptCovered").value
     const entry = document.querySelector("#journalEntry").value
@@ -14,6 +14,7 @@ document.querySelector("#submit").addEventListener("click", (event) => {
      API.saveEntry(dailyJournal).then(()=>{
         API.loadEntries();
      })
+     closeModal();
      
     
 });
@@ -28,6 +29,18 @@ document.querySelector(".journalList").addEventListener("click", (event) => {
                document.querySelector(".journalList").innerHTML = " ";
                API.loadEntries()
            })
+    }
+})
+
+document.querySelector(".journalList").addEventListener("click", (event) => {
+    if(event.target.id.startsWith("editDonut--")){
+
+        API.getJournalEntryById(event.target.id.split("--")[1])
+            .then(response => {
+                document.querySelector("#journalEntry").value = response.entry;
+                openModal();
+             console.log(response)
+            })
     }
 })
 
