@@ -12,7 +12,6 @@ import EntriesDOM from "./entriesDOM.js"
         addModal.style.display = "none";
     }
     
-    
     addModalBtn.addEventListener("click", openAddModal); 
     closeAddModalBtn.addEventListener("click", closeAddModal); 
     
