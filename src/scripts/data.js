@@ -1,10 +1,15 @@
+/*
+API layer to get and update data from entries.json 
+*/
+import EntriesDOM from "./entriesDOM.js"
+
 let entriesAPI_URL = "http://localhost:8088/entries"
 const API = {
     loadEntries: function() {
         fetch(entriesAPI_URL)
         .then(data => data.json())
         .then(parsedData => {
-            renderJournalEntries(parsedData);
+            EntriesDOM.renderJournalEntries(parsedData);
         })
      },
 
@@ -46,9 +51,7 @@ const API = {
           })
           .then(response => response.json());
      }
-
-
 }
 
-
+export default API
 
