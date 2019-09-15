@@ -75,6 +75,11 @@ document.querySelector("#filerByMood").addEventListener("click", (event) => {
     }
 })
 
+document.querySelector("#conceptCovered, conceptCoveredEdit").addEventListener("keyup", (event) => {
+        if (event.target.value.length > 50) 
+        alert("Too many characters in concept")
+})
+
  
 API.loadEntries();
 
