@@ -68,7 +68,11 @@ document.querySelector(".journalList").addEventListener("click", (event) => {
     }
 })
 
-document.querySelector("#filterByMood").addEventListener("click", event => {
+document.querySelector("#filerByMood").addEventListener("click", (event) => {
+    if(event.target.name.startsWith("mood")){
+        const selectedMood = document.querySelector('input[name="mood"]:checked').value;
+        API.loadEntries(selectedMood);
+    }
 })
 
  

@@ -1,7 +1,13 @@
 import EntryComponent from "./entryComponent.js"
 const EntriesDOM = {
 
-     renderJournalEntries : (entries) => {
+     renderJournalEntries : (entries, selectedMood) => {
+         if(selectedMood!=undefined)
+         {
+            entries = entries.filter(function(entry){
+                return entry.mood == selectedMood;
+            })
+         }
         document.querySelector(".journalList").innerHTML = "";
         entries.forEach(item => {
         let dailyJournal = EntryComponent.createJournalHTML(item)
