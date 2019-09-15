@@ -1,20 +1,28 @@
 
 
-    var modal = document.querySelector("#addJournalModal")
-    var modalBtn = document.querySelector("#btn-addJournal")
-    var closeBtn = document.querySelector(".closeBtn")
-    openModal = () => {
-        modal.style.display = "block";
+    const addModal = document.querySelector("#addJournalModal")
+    const addModalBtn = document.querySelector("#btn-addJournal")
+    const closeAddModalBtn = document.querySelector(".closeBtn")
+    openAddModal = () => {
+        addModal.style.display = "block"; 
     }
-    closeModal = () => {
-        modal.style.display = "none";
+    closeAddModal = () => {
+        addModal.style.display = "none";
     }
     
     
-    modalBtn.addEventListener("click", openModal); 
-    closeBtn.addEventListener("click", closeModal);
+    addModalBtn.addEventListener("click", openAddModal); 
+    closeAddModalBtn.addEventListener("click", closeAddModal); 
     
-
+    const editModal = document.querySelector("#editJournalModal")
+    const closeEditModalBtn = document.querySelector(".closeEditBtn")
+    openEditModal = () => {
+        editModal.style.display = "block"; 
+    }
+    closeEditModal = () => {
+        editModal.style.display = "none";
+    }
+    closeEditModalBtn.addEventListener("click", closeEditModal); 
 
 
 

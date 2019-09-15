@@ -1,23 +1,16 @@
 {
   "entries": [
     {
-      "date": "2019-09-19",
-      "concept": "test",
-      "entry": "test",
-      "mood": "happy",
-      "id": 6
-    },
-    {
-      "date": "2019-09-19",
-      "concept": "test",
-      "entry": "testzxc'l;mzx;mz.x,mc.zxmxclm;",
-      "mood": "happy",
+      "date": "2019-09-12",
+      "concept": "test 12",
+      "entry": "test 12",
+      "mood": "exausted",
       "id": 7
     },
     {
       "date": "2019-09-19",
       "concept": "test",
-      "entry": "testzxc'l;mzx;mz.x,mc.zxmxclm;zxc/zxc/mzxc/mzx.,mcx.mxzc.",
+      "entry": "TEST TEST TEST",
       "mood": "happy",
       "id": 8
     },
@@ -34,6 +27,13 @@
       "entry": "test😀",
       "mood": "happy",
       "id": 26
+    },
+    {
+      "date": "",
+      "concept": "",
+      "entry": "test",
+      "mood": "happy",
+      "id": 27
     }
   ]
 }

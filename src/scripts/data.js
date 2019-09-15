@@ -20,6 +20,18 @@ const API = {
            .catch(error => console.log('Error:', error));
     }, 
 
+    updateEntry: function(entry) {
+        return fetch(`${entriesAPI_URL}/${entry.id}`, {
+            method: 'PUT',
+            body: JSON.stringify(entry),
+            headers: {
+                'Content-Type': 'application/json'
+            } 
+         }).then (res => res.json()) 
+          // .then(response => console.log('Success:', JSON.stringify(response)))
+           .catch(error => console.log('Error:', error));
+    }, 
+
     deleteEntry: (id) => {
         return fetch(`${entriesAPI_URL}/${id}`, {
             method: 'DELETE',

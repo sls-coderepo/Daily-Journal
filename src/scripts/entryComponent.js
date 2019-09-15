@@ -12,6 +12,16 @@ const EntryComponent = {
         
     </section>
     `
-    }
+    },
+
+   
 }
 
+
+
+
+    
+       
+        
+    
+    

@@ -19,7 +19,6 @@ h1 {
     color: rgb(248, 242, 233);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    margin-left: 30px;
 }
 
 .modalBtn {
@@ -34,6 +33,7 @@ h1 {
     border: 2px solid #4CAF50;
   }
 
+  
   .journalList {
       width: 80%;
       margin: auto;
@@ -59,7 +59,7 @@ h1 {
     background-color: #fefefe;
     margin: 50px auto; /* 15% from the top and centered */
     padding: 0;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 50%; /* Could be more or less, depending on screen size */
     box-shadow: 0px 5px 8px 0 rgba(0,0,0,0.5);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -85,15 +85,18 @@ h1 {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
+    height:50px;
+   
   }
+ 
 
-.closeBtn {
+.closeBtn,  .closeEditBtn{
     color: #ccc;
     float: right;
     font-size: 30px;
 }
 
-.closeBtn:hover, .closeBtn:focus{
+.closeBtn:hover, .closeBtn:focus,  .closeEditBtn:hover,  .closeEditBtn:focus{
     color:black;
     text-decoration: none;
     cursor: pointer;
@@ -112,6 +115,50 @@ footer {
     text-align: center;
 }   
 
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
 
+.flex-item {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    padding:10px 20px;
+}
 
+.flex-item > label,
+    input,
+    select,
+    button {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+input, select {
+    height: 30px;
+}
+
+.header-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.header-flex-item-h1
+{
+  margin-left: 90px;
+}
+
+.header-flex-item-btn
+{
+  margin-right: 100px;
+ margin-top: 30px;
+}
 
