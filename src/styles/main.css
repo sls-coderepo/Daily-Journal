@@ -148,7 +148,7 @@ input, select {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  flex: 1;
+
 }
 
 .header-flex-item-h1
@@ -158,7 +158,7 @@ input, select {
 
 .header-flex-item-btn
 {
-  margin-right: 100px;
+ margin-right: 100px;
  margin-top: 30px;
 }
 
