@@ -68,6 +68,9 @@ document.querySelector(".journalList").addEventListener("click", (event) => {
     }
 })
 
+document.querySelector("#filterByMood").addEventListener("click", event => {
+})
+
  
 API.loadEntries();
 
