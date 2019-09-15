@@ -19,7 +19,18 @@
             <button type="button" class="btn-addJournal" id="btn-addJournal">Add Journal</button>
         </div>
     </header>
-    <section class="journalList"></section>
+    <div class="select-mood" id="filerByMood">  
+            <fieldset>
+            <legend>Filter Journal Entries by Mood</legend>
+            <input type="radio" name="mood" id="btn-mood-happy" value="happy"><label>Happy</label>
+            <input type="radio" name="mood" id="btn-mood-fine" value="fine"><label>Fine</label>
+            <input type="radio" name="mood" id="btn-mood-sad" value="sad"><label>Sad</label>
+            <input type="radio" name="mood" id="btn-mood-exausted"value="exausted"><label>Exausted</label>
+            </fieldset>
+        </div>
+    
+
+    <div class="journalList"></div>
 
     <div id="addJournalModal" class="modal">
         <div class="modal-content">
@@ -46,10 +57,10 @@
                 <div class="flex-container">
                     <label class="flex-label" for="moodOfTheDay">Mood of the day</label>
                     <select class="flex-input" id="moodOfTheDay">
-                        <option value="happy">Happy</option>
-                        <option value="fine">Fine</option>
-                        <option value="sad">Sad</option>
-                        <option value="exausted">Exausted</option>
+                        <option value="Happy">Happy</option>
+                        <option value="Fine">Fine</option>
+                        <option value="Sad">Sad</option>
+                        <option value="Exausted">Exausted</option>
                     </select>
                 </div>
             </div>
@@ -84,10 +95,10 @@
                     <div class="flex-container">
                         <label class="flex-label" for="moodOfTheDay">Mood of the day</label>
                         <select class="flex-input" id="moodOfTheDayEdit">
-                            <option value="happy">Happy</option>
-                            <option value="fine">Fine</option>
-                            <option value="sad">Sad</option>
-                            <option value="exausted">Exausted</option>
+                            <option value="Happy">Happy</option>
+                            <option value="Fine">Fine</option>
+                            <option value="Sad">Sad</option>
+                            <option value="Exausted">Exausted</option>
                         </select>
                     </div>
                 </div>

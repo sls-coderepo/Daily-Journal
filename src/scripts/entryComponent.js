@@ -1,6 +1,7 @@
 const EntryComponent = {
     createJournalHTML: function (journalObj) {
         return `
+    
     <section class="journal_entry">
          <h3>${journalObj.concept}</h3>
          <p>${journalObj.entry}</p>
