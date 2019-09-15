@@ -6,7 +6,7 @@ import EntriesDOM from "./entriesDOM.js"
 let entriesAPI_URL = "http://localhost:8088/entries"
 const API = {
     loadEntries: function() {
-        fetch(entriesAPI_URL)
+        fetch(entriesAPI_URL+'?_sort=date&_order=desc')
         .then(data => data.json())
         .then(parsedData => {
             EntriesDOM.renderJournalEntries(parsedData);
