@@ -1,121 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/main.css" />
     <title>Daily Journal</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="main-header header-container">
-        <div class="header-flex-item-h1">
-            <h1 >Daily Journal</h1>
-        </div>
-        
-        <div class="header-flex-item-btn">
-            <button type="button" class="btn-addJournal" id="btn-addJournal">Add Journal</button>
-        </div>
+      <div class="header-flex-item-h1">
+        <h1>Daily Journal</h1>
+      </div>
+
+      <div class="header-flex-item-btn">
+        <button type="button" class="btn-addJournal" id="btn-addJournal">
+          Add Journal
+        </button>
+      </div>
     </header>
-    <div class="select-mood" id="filerByMood">  
-            <fieldset>
-            <legend>Filter Journal Entries by Mood</legend>
-            <input type="radio" name="mood"  value="Happy"><label>Happy</label>
-            <input type="radio" name="mood"  value="Fine"><label>Fine</label>
-            <input type="radio" name="mood"  value="Sad"><label>Sad</label>
-            <input type="radio" name="mood"  value="Exausted"><label>Exausted</label>
-            </fieldset>
-        </div>
-    
+    <div class="select-container">
+      <div class="select-mood" id="filerByMood">
+        <fieldset>
+          <legend>Filter Journal Entries by Mood</legend>
+          <input type="radio" name="mood" value="Happy" /><label>Happy</label>
+          <input type="radio" name="mood" value="Fine" /><label>Fine</label>
+          <input type="radio" name="mood" value="Sad" /><label>Sad</label>
+          <input type="radio" name="mood" value="Exausted" /><label>Exausted</label>
+        </fieldset>
+      </div>
+      <div class="search-field" id="searchByText">
+        <fieldset>
+          <legend>Search</legend>
+          <input id="search-field"/>
+        </fieldset>
+      </div>
+    </div>
 
     <div class="journalList"></div>
 
     <div id="addJournalModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="closeBtn">&times;</span>
-                <h2>Add New Journal</h2>
-            </div>
-            <div class="modal-body ">
-                <div class="flex-container">
-                    <label class="flex-label" for="journalDate">Date of entry</label>
-                    <input class="flex-input" type="date" id="journalDate" />
-                </div>
-
-                <div class="flex-container">
-                    <label class="flex-label" for="conceptCovered">Concept Covered</label>
-                    <input class="flex-input" type="text" id="conceptCovered" />
-                </div>
-
-                <div class="flex-container">
-                    <label class="flex-label" for="journalEntry">Journal Entry</label>
-                    <textarea class="flex-input" rows="8" id="journalEntry"></textarea>
-                </div>
-
-                <div class="flex-container">
-                    <label class="flex-label" for="moodOfTheDay">Mood of the day</label>
-                    <select class="flex-input" id="moodOfTheDay">
-                        <option value="Happy">Happy</option>
-                        <option value="Fine">Fine</option>
-                        <option value="Sad">Sad</option>
-                        <option value="Exausted">Exausted</option>
-                    </select>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" id="btn-save">Save</button>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="closeBtn">&times;</span>
+          <h2>Add New Journal</h2>
         </div>
+        <div class="modal-body ">
+          <div class="flex-container">
+            <label class="flex-label" for="journalDate">Date of entry</label>
+            <input class="flex-input" type="date" id="journalDate" />
+          </div>
+
+          <div class="flex-container">
+            <label class="flex-label" for="conceptCovered"
+              >Concept Covered</label
+            >
+            <input class="flex-input" type="text" id="conceptCovered" />
+          </div>
+
+          <div class="flex-container">
+            <label class="flex-label" for="journalEntry">Journal Entry</label>
+            <textarea class="flex-input" rows="8" id="journalEntry"></textarea>
+          </div>
+
+          <div class="flex-container">
+            <label class="flex-label" for="moodOfTheDay">Mood of the day</label>
+            <select class="flex-input" id="moodOfTheDay">
+              <option value="Happy">Happy</option>
+              <option value="Fine">Fine</option>
+              <option value="Sad">Sad</option>
+              <option value="Exausted">Exausted</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="btn-save">Save</button>
+        </div>
+      </div>
     </div>
 
     <div id="editJournalModal" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="closeEditBtn">&times;</span>
-                    <h2>Edit Journal</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="flex-container">
-                        <label class="flex-label" for="journalDate">Date of entry</label>
-                        <input class="flex-input" type="date" id="journalDateEdit" />
-                    </div>
-    
-                    <div class="flex-container">
-                        <label class="flex-label" for="conceptCovered">Concept Covered</label>
-                        <input class="flex-input" type="text" id="conceptCoveredEdit" />
-                    </div>
-    
-                    <div class="flex-container">
-                        <label class="flex-label" for="journalEntry">Journal Entry</label>
-                        <textarea class="flex-input" rows="8" id="journalEntryEdit"></textarea>
-                    </div>
-    
-                    <div class="flex-container">
-                        <label class="flex-label" for="moodOfTheDay">Mood of the day</label>
-                        <select class="flex-input" id="moodOfTheDayEdit">
-                            <option value="Happy">Happy</option>
-                            <option value="Fine">Fine</option>
-                            <option value="Sad">Sad</option>
-                            <option value="Exausted">Exausted</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <input type="hidden" id="journalEntryId">
-                    <button type="button" id="btn-save-changes">Save Changes</button>
-                </div>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="closeEditBtn">&times;</span>
+          <h2>Edit Journal</h2>
         </div>
+        <div class="modal-body">
+          <div class="flex-container">
+            <label class="flex-label" for="journalDate">Date of entry</label>
+            <input class="flex-input" type="date" id="journalDateEdit" />
+          </div>
+
+          <div class="flex-container">
+            <label class="flex-label" for="conceptCovered"
+              >Concept Covered</label
+            >
+            <input class="flex-input" type="text" id="conceptCoveredEdit" />
+          </div>
+
+          <div class="flex-container">
+            <label class="flex-label" for="journalEntry">Journal Entry</label>
+            <textarea
+              class="flex-input"
+              rows="8"
+              id="journalEntryEdit"
+            ></textarea>
+          </div>
+
+          <div class="flex-container">
+            <label class="flex-label" for="moodOfTheDay">Mood of the day</label>
+            <select class="flex-input" id="moodOfTheDayEdit">
+              <option value="Happy">Happy</option>
+              <option value="Fine">Fine</option>
+              <option value="Sad">Sad</option>
+              <option value="Exausted">Exausted</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <input type="hidden" id="journalEntryId" />
+          <button type="button" id="btn-save-changes">Save Changes</button>
+        </div>
+      </div>
+    </div>
 
     <footer>
-        <p>&copy; 2019</p>
+      <p>&copy; 2019</p>
     </footer>
 
     <script type="module" src="scripts/journal.js"></script>
-   
-
-</body>
-
+  </body>
 </html>
