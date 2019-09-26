@@ -45,7 +45,7 @@ document.querySelector("#btn-save-changes").addEventListener("click", (event) =>
 });
 
 document.querySelector(".journalList").addEventListener("click", (event) => {
-    if(event.target.id.startsWith("deleteDonut--")){
+    if(event.target.id.startsWith("deleteJournal--")){
         
         
         API.deleteEntry(event.target.id.split("--")[1])
@@ -57,7 +57,7 @@ document.querySelector(".journalList").addEventListener("click", (event) => {
 })
 
 document.querySelector(".journalList").addEventListener("click", (event) => {
-    if(event.target.id.startsWith("editDonut--")){
+    if(event.target.id.startsWith("editJournal--")){
 
         API.getJournalEntryById(event.target.id.split("--")[1])
             .then(response => {

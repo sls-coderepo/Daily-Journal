@@ -9,8 +9,8 @@ const EntryComponent = {
             <p class="flex-item-entry">Mood: ${journalObj.mood}</p>
             <p class="flex-item-entry">Posted On: ${journalObj.date}</p>
          </div>
-         <button type="button" class="btn" id="deleteDonut--${journalObj.id}">Delete</button>
-         <button type="button" class="btn" id="editDonut--${journalObj.id}">Edit</button>
+         <button type="button" class="btn" id="deleteJournal--${journalObj.id}">Delete</button>
+         <button type="button" class="btn" id="editJournal--${journalObj.id}">Edit</button>
          <hr>
         
     </section>

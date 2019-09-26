@@ -1,13 +1,6 @@
 {
   "entries": [
     {
-      "date": "2019-09-19",
-      "concept": "test",
-      "entry": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "mood": "Sad",
-      "id": 8
-    },
-    {
       "date": "2019-09-03",
       "concept": "ndsnc,nzx,",
       "entry": "c  c",
@@ -22,10 +15,10 @@
       "id": 26
     },
     {
-      "date": "",
-      "concept": "",
+      "date": "2019-09-27",
+      "concept": "z<X/<ZX?>",
       "entry": "test",
-      "mood": "happy",
+      "mood": "Happy",
       "id": 27
     },
     {
@@ -41,13 +34,6 @@
       "entry": "",
       "mood": "happy",
       "id": 29
-    },
-    {
-      "date": "2019-09-23",
-      "concept": "TEAT",
-      "entry": "If you walk around Long Island City on any given day, you'll see cranes everywhere and new apartment buildings popping up seemingly overnight. Improvements are being made to multiple subway stations. And new businesses are opening, including a liquid nitrogen ice cream shop and a dance studio for kids.\n",
-      "mood": "Happy",
-      "id": 30
     }
   ]
 }
