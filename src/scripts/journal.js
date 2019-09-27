@@ -79,7 +79,7 @@ document.querySelector("#conceptCovered, conceptCoveredEdit").addEventListener("
     }
    })
 
-   document.querySelector("#search-field").addEventListener("keyup", event => {
+   document.querySelector("#searchField").addEventListener("keyup", event => {
        if(event.keyCode === 13) {
            const searchTerm = event.target.value
            let selectedMood = undefined;
