@@ -68,7 +68,8 @@ document.querySelector(".journalList").addEventListener("click", (event) => {
 document.querySelector("#filerByMood").addEventListener("click", (event) => {
     if (event.target.name.startsWith("mood")) {
         const selectedMood = document.querySelector('input[name="mood"]:checked').value;
-        API.loadEntries(selectedMood);
+        const searchTerm = event.target.value
+        API.loadEntries(selectedMood,searchTerm);
     }
 })
 
@@ -76,6 +77,20 @@ document.querySelector("#conceptCovered, conceptCoveredEdit").addEventListener("
     if (event.target.value.length > 50){
         alert("Too many characters in concept")
     }
+   })
+
+   document.querySelector("#search-field").addEventListener("keyup", event => {
+       if(event.keyCode === 13) {
+           const searchTerm = event.target.value
+           let selectedMood = undefined;
+           if(document.querySelector('input[name="mood"]:checked'))
+           {
+             selectedMood = document.querySelector('input[name="mood"]:checked').value;
+           }
+           
+           console.log(searchTerm)
+           API.loadEntries(selectedMood, searchTerm)
+       }
    })
 
 API.loadEntries();

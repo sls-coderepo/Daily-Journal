@@ -1,39 +1,18 @@
 {
   "entries": [
     {
-      "date": "2019-09-03",
-      "concept": "ndsnc,nzx,",
-      "entry": "c  c",
+      "date": "2019-09-26",
+      "concept": "Nutshell Project",
+      "entry": "I learned a lot while working in a nutshell project.\nNutshell project is basically a dashboard where you can put all your daily task, upcoming events",
+      "mood": "Happy",
+      "id": 1
+    },
+    {
+      "date": "2019-09-16",
+      "concept": "Array Method",
+      "entry": "Learning array method is helpful for me ",
       "mood": "Fine",
-      "id": 25
-    },
-    {
-      "date": "2019-09-17",
-      "concept": "Test",
-      "entry": "Test",
-      "mood": "Happy",
       "id": 2
-    },
-    {
-      "date": "2019-09-27",
-      "concept": "z<X/<ZX?>",
-      "entry": "test",
-      "mood": "Happy",
-      "id": 27
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "",
-      "mood": "Sad",
-      "id": 4
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "",
-      "mood": "happy",
-      "id": 29
     }
   ]
 }

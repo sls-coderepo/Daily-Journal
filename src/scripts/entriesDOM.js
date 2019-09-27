@@ -1,11 +1,17 @@
 import EntryComponent from "./entryComponent.js"
 const EntriesDOM = {
 
-     renderJournalEntries : (entries, selectedMood) => {
+     renderJournalEntries : (entries, selectedMood, searchTerm) => {
          if(selectedMood!=undefined)
          {
             entries = entries.filter(function(entry){
                 return entry.mood == selectedMood;
+            })
+         }
+         if(searchTerm!=undefined)
+         {
+            entries = entries.filter(function(entry){
+                return entry.concept.includes(searchTerm);
             })
          }
         document.querySelector(".journalList").innerHTML = "";

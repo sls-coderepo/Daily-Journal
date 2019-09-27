@@ -5,11 +5,11 @@ import EntriesDOM from "./entriesDOM.js"
 
 let entriesAPI_URL = "http://localhost:8088/entries"
 const API = {
-    loadEntries: function(selectedMood) {
+    loadEntries: function(selectedMood, searchTerm) {
         fetch(entriesAPI_URL+'?_sort=date&_order=desc')
         .then(data => data.json())
         .then(parsedData => {
-            EntriesDOM.renderJournalEntries(parsedData, selectedMood);
+            EntriesDOM.renderJournalEntries(parsedData, selectedMood, searchTerm);
         })
      },
 
